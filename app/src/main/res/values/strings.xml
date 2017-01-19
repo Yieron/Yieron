@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Yieron</string>
+    <string name="ensure">确定</string>
+    <string name="login_failure">登录超时，请重新登录</string>
 </resources>
