@@ -8,5 +8,4 @@ import android.app.Application;
 
 public class YieronApplication extends Application {
 
-
 }

@@ -1,7 +1,10 @@
 package com.helloandroid.yieron.yieron.ui.activity;
 
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.widget.Toast;
 
 import com.helloandroid.yieron.yieron.R;
 
@@ -15,10 +18,27 @@ import com.helloandroid.yieron.yieron.R;
  * 2016年10月27日
  */
 public class MainActivity extends AppCompatActivity {
+    private static String mAppVersion = "";
+    private static String api_version = "1.0.0";//v1.0
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toast.makeText(this, getAppVersion(), Toast.LENGTH_LONG).show();
+    }
+
+    private String getAppVersion() {
+        if (TextUtils.isEmpty(mAppVersion)) {
+            try {
+                mAppVersion = getApplicationContext().getPackageManager()
+                        .getPackageInfo(getApplicationContext().getPackageName(), 0).versionName;
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+        return mAppVersion;
     }
 }
