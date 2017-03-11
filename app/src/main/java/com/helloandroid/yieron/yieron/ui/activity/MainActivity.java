@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.widget.Toast;
 
 import com.helloandroid.yieron.yieron.R;
+import com.helloandroid.yieron.yieron.utils.AppUtils;
 
 /**
  * 此项目为基项目，集成了很多demo，方便在实际的项目中直接使用。
@@ -21,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
     private static String mAppVersion = "";
     private static String api_version = "1.0.0";//v1.0
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Toast.makeText(this, getAppVersion(), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, AppUtils.getAppPackageName(this), Toast.LENGTH_LONG).show();
     }
 
     private String getAppVersion() {
