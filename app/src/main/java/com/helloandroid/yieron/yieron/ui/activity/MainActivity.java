@@ -41,7 +41,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return mAppVersion;
-        
-        //test
     }
 }
