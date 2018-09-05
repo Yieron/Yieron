@@ -3,6 +3,10 @@
     <string name="ensure">确定</string>
     <string name="login_failure">登录超时，请重新登录</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="get_contentProvider">获取myApplication的contentProvider</string>
+    <string name="add_contentProvider">添加myApplication的contentProvider</string>
+    <string name="delete_contentProvider">删除myApplication的contentProvider</string>
+    <string name="update_contentProvider">更新myApplication的contentProvider</string>
 
     <!-- Strings related to Settings -->
 
