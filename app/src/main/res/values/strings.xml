@@ -7,6 +7,7 @@
     <string name="add_contentProvider">添加myApplication的contentProvider</string>
     <string name="delete_contentProvider">删除myApplication的contentProvider</string>
     <string name="update_contentProvider">更新myApplication的contentProvider</string>
+    <string name="calender">日历</string>
 
     <!-- Strings related to Settings -->
 

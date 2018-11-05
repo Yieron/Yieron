@@ -1,10 +1,12 @@
 package com.helloandroid.yieron.yieron.ui.activity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -15,6 +17,7 @@ import android.widget.Toast;
 import com.helloandroid.yieron.yieron.R;
 import com.helloandroid.yieron.yieron.utils.AppUtils;
 
+import java.util.Calendar;
 /**
  * 此项目为基项目，集成了很多demo，方便在实际的项目中直接使用。
  * 同时，此项目为自己兴趣爱好和学习研究的工具项目，就像工具类一样，这是工具项目。
@@ -27,7 +30,7 @@ import com.helloandroid.yieron.yieron.utils.AppUtils;
 public class MainActivity extends AppCompatActivity {
     private static String mAppVersion = "";
     private static String api_version = "1.0.0";//v1.0
-    private Button getMyContentProvider, addMyContentProvider, deleteMyContentProvider, updateMyContentProvider;
+    private Button getMyContentProvider, addMyContentProvider, deleteMyContentProvider, updateMyContentProvider, calenderBtn;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         addMyContentProvider = (Button) findViewById(R.id.my_contentProvider_add);
         deleteMyContentProvider = (Button) findViewById(R.id.my_contentProvider_delete);
         updateMyContentProvider = (Button) findViewById(R.id.my_contentProvider_update);
+        calenderBtn = (Button) findViewById(R.id.btn_Calendar);
 
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,6 +107,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        calenderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //setAlarm(calendar);
+
+                Calendar calendar = Calendar.getInstance();
+                calendar.add(Calendar.SECOND, 10);
+                Intent alarmIntent = new Intent(AlarmClock.ACTION_SET_ALARM);
+                alarmIntent.putExtra(AlarmClock.EXTRA_MESSAGE, "提醒消息 下午去XXX开会");
+                alarmIntent.putExtra(AlarmClock.EXTRA_HOUR, calendar.get(Calendar.HOUR_OF_DAY));
+                alarmIntent.putExtra(AlarmClock.EXTRA_MINUTES, calendar.get(Calendar.MINUTE) + 5);
+                alarmIntent.putExtra(AlarmClock.EXTRA_SKIP_UI, true);
+                alarmIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(alarmIntent);
+
+                //跳转到系统闹钟设置界面
+
+//                Intent alarmas = new Intent(AlarmClock.ACTION_SET_ALARM);
+//                startActivity(alarmas);
+            }
+        });
     }
 
     private String getAppVersion() {
