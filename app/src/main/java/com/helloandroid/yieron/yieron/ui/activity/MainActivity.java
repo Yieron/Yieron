@@ -18,6 +18,9 @@ import com.helloandroid.yieron.yieron.R;
 import com.helloandroid.yieron.yieron.utils.AppUtils;
 
 import java.util.Calendar;
+
+import cn.sharesdk.onekeyshare.OnekeyShare;
+
 /**
  * 此项目为基项目，集成了很多demo，方便在实际的项目中直接使用。
  * 同时，此项目为自己兴趣爱好和学习研究的工具项目，就像工具类一样，这是工具项目。
@@ -30,7 +33,7 @@ import java.util.Calendar;
 public class MainActivity extends AppCompatActivity {
     private static String mAppVersion = "";
     private static String api_version = "1.0.0";//v1.0
-    private Button getMyContentProvider, addMyContentProvider, deleteMyContentProvider, updateMyContentProvider, calenderBtn;
+    private Button shareSDKBtn,getMyContentProvider, addMyContentProvider, deleteMyContentProvider, updateMyContentProvider, calenderBtn;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         deleteMyContentProvider = (Button) findViewById(R.id.my_contentProvider_delete);
         updateMyContentProvider = (Button) findViewById(R.id.my_contentProvider_update);
         calenderBtn = (Button) findViewById(R.id.btn_Calendar);
+        shareSDKBtn = (Button) findViewById(R.id.btn_shareSDK);
 
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -126,6 +130,30 @@ public class MainActivity extends AppCompatActivity {
 
 //                Intent alarmas = new Intent(AlarmClock.ACTION_SET_ALARM);
 //                startActivity(alarmas);
+            }
+        });
+
+        shareSDKBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OnekeyShare oks = new OnekeyShare();
+                //关闭sso授权
+                oks.disableSSOWhenAuthorize();
+
+                // title标题，微信、QQ和QQ空间等平台使用
+                oks.setTitle(getString(R.string.share));
+                // titleUrl QQ和QQ空间跳转链接
+                oks.setTitleUrl("http://sharesdk.cn");
+                // text是分享文本，所有平台都需要这个字段
+                oks.setText("我是分享文本");
+                // imagePath是图片的本地路径，Linked-In以外的平台都支持此参数
+//                oks.setImagePath("/sdcard/test.jpg");//确保SDcard下面存在此张图片
+                // url在微信、微博，Facebook等平台中使用
+                oks.setUrl("http://sharesdk.cn");
+                // comment是我对这条分享的评论，仅在人人网使用
+                oks.setComment("我是测试评论文本");
+                // 启动分享GUI
+                oks.show(MainActivity.this);
             }
         });
     }

@@ -8,6 +8,7 @@
     <string name="delete_contentProvider">删除myApplication的contentProvider</string>
     <string name="update_contentProvider">更新myApplication的contentProvider</string>
     <string name="calender">日历</string>
+    <string name="share">分享</string>
 
     <!-- Strings related to Settings -->
 
