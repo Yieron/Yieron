@@ -53,22 +53,22 @@ MobSDK {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.0'
-    compile 'com.android.support:design:25.3.0'
+    implementation 'com.android.support:appcompat-v7:25.3.0'
+    implementation 'com.android.support:design:25.3.0'
     //Logger
-    compile 'com.orhanobut:logger:1.15'
-    compile 'com.android.support:support-v4:25.3.0'
-    compile 'com.android.support:support-vector-drawable:25.3.0'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.orhanobut:logger:1.15'
+    implementation 'com.android.support:support-v4:25.3.0'
+    implementation 'com.android.support:support-vector-drawable:25.3.0'
+    testImplementation 'junit:junit:4.12'
     //Ion
-    compile 'com.koushikdutta.ion:ion:2.+'
+    implementation 'com.koushikdutta.ion:ion:2.+'
     //okGo
-    compile 'com.lzy.net:okgo:2.1.4'        //可以单独使用，不需要依赖下方的扩展包
-    compile 'com.lzy.net:okrx:0.1.2'        //RxJava扩展支持，根据需要添加
-    compile 'com.lzy.net:okserver:1.1.3'    //下载管理和上传管理扩展，根据需要添加
+    implementation 'com.lzy.net:okgo:2.1.4'        //可以单独使用，不需要依赖下方的扩展包
+    implementation 'com.lzy.net:okrx:0.1.2'        //RxJava扩展支持，根据需要添加
+    implementation 'com.lzy.net:okserver:1.1.3'    //下载管理和上传管理扩展，根据需要添加
 
 }
