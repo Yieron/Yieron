@@ -1,5 +1,3 @@
-
-
 package com.helloandroid.yieron.yieron.utils;
 
 import android.app.ActivityManager;

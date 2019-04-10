@@ -33,7 +33,7 @@ import cn.sharesdk.onekeyshare.OnekeyShare;
 public class MainActivity extends AppCompatActivity {
     private static String mAppVersion = "";
     private static String api_version = "1.0.0";//v1.0
-    private Button shareSDKBtn,getMyContentProvider, addMyContentProvider, deleteMyContentProvider, updateMyContentProvider, calenderBtn;
+    private Button shareSDKBtn, getMyContentProvider, addMyContentProvider, deleteMyContentProvider, updateMyContentProvider, calenderBtn;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -52,6 +52,11 @@ public class MainActivity extends AppCompatActivity {
         calenderBtn = (Button) findViewById(R.id.btn_Calendar);
         shareSDKBtn = (Button) findViewById(R.id.btn_shareSDK);
 
+        //🦋
+        //🎦
+        //⁉️
+        //🇯🇪
+        //TODO
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
