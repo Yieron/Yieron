@@ -9,6 +9,7 @@
     <string name="update_contentProvider">更新myApplication的contentProvider</string>
     <string name="calender">日历</string>
     <string name="share">分享</string>
+    <string name="MyView">自定义View</string>
 
     <!-- Strings related to Settings -->
 

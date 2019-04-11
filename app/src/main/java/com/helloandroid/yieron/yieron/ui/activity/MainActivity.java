@@ -33,7 +33,9 @@ import cn.sharesdk.onekeyshare.OnekeyShare;
 public class MainActivity extends AppCompatActivity {
     private static String mAppVersion = "";
     private static String api_version = "1.0.0";//v1.0
-    private Button shareSDKBtn, getMyContentProvider, addMyContentProvider, deleteMyContentProvider, updateMyContentProvider, calenderBtn;
+    private Button shareSDKBtn, getMyContentProvider, addMyContentProvider,
+            deleteMyContentProvider, updateMyContentProvider, calenderBtn,
+    myView;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         updateMyContentProvider = (Button) findViewById(R.id.my_contentProvider_update);
         calenderBtn = (Button) findViewById(R.id.btn_Calendar);
         shareSDKBtn = (Button) findViewById(R.id.btn_shareSDK);
+        myView = (Button) findViewById(R.id.my_view);
 
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,6 +157,14 @@ public class MainActivity extends AppCompatActivity {
                 oks.setComment("我是测试评论文本");
                 // 启动分享GUI
                 oks.show(MainActivity.this);
+            }
+        });
+        myView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent();
+                intent.setClass(MainActivity.this,MyViewActivity.class);
+                startActivity(intent);
             }
         });
     }
