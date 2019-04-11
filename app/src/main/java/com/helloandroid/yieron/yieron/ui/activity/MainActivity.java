@@ -52,11 +52,6 @@ public class MainActivity extends AppCompatActivity {
         calenderBtn = (Button) findViewById(R.id.btn_Calendar);
         shareSDKBtn = (Button) findViewById(R.id.btn_shareSDK);
 
-        //🦋
-        //🎦
-        //⁉️
-        //🇯🇪
-        //TODO
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
