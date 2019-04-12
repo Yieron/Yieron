@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style
+         name="animation">
+         <item name="android:windowEnterAnimation">@anim/enter</item>
+          <item name="android:windowExitAnimation">@anim/out</item>
+         <!-- 窗口 进出的动画-->
+     </style>
+</resources>
