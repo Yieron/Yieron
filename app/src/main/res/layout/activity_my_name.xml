@@ -9,7 +9,13 @@
 
     <com.example.yieronview.MyNameView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:yinName="@string/Yin"
+        app:yinSex="@string/man"
+        app:yinAge="27"
+        app:yinMarried="false"
+        app:yinWidth="120dp"
+        app:yinHeight="240dp">
 
     </com.example.yieronview.MyNameView>
 

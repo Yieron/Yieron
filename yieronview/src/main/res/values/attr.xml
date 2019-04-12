@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--　　 常用的format类型：-->
+    <!--1)  string：字符串类型；-->
+    <!--2)  integer：整数类型；-->
+    <!--3)  float：浮点型；-->
+    <!--4)  dimension：尺寸，后面必须跟dp、dip、px、sp等单位；-->
+    <!--5)  Boolean：布尔值；-->
+    <!--6)  reference：引用类型，传入的是某一资源的ID，必须以“@”符号开头；-->
+    <!--7)  color：颜色，必须是“#”符号开头；-->
+    <!--8)  fraction：百分比，必须是“%”符号结尾；-->
+    <!--9)  enum：枚举类型-->
+    <!--format中可以写多种类型，中间使用“|”符号分割开，表示这几种类型都可以传入这个属性；-->
+
+
     <attr name="rightPadding" format="dimension" />
 
     <declare-styleable name="CustomMenu">
@@ -14,5 +27,23 @@
         <attr name="textColor" format="color" />
         <attr name="startAngle" format="integer" />
         <attr name="sweepAngle" format="integer" />
+    </declare-styleable>
+
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+
+    <declare-styleable name="enumTypeDemoView">
+        <attr name="orientation" />
+    </declare-styleable>
+    
+    <declare-styleable name="MyNameView">
+        <attr name="yinName" format="string"/>
+        <attr name="yinSex" format="string"/>
+        <attr name="yinAge" format="integer"/>
+        <attr name="yinMarried" format="boolean"/>
+        <attr name="yinWidth" format="dimension"/>
+        <attr name="yinHeight" format="dimension"/>
     </declare-styleable>
 </resources>
