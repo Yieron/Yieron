@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#a0a0a0"
-    android:orientation="vertical" >
-      <GridView 
-                   android:id="@+id/gv_keybord"
-                   android:layout_width="fill_parent"
-                   android:layout_height="match_parent"
-                   android:horizontalSpacing="0.5dp"
-                   android:verticalSpacing="0.5dp"
-                   android:listSelector="@null"
-                   android:numColumns="3"
-                   ></GridView>
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gv_keybord"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="0.5dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:verticalSpacing="0.5dp"></GridView>
 
 </LinearLayout>

@@ -21,6 +21,9 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.yieronview.utils.Util;
+
 public class PasswordView extends RelativeLayout  {
 	Context context;
 	private String strPassword; // 输入的密码
@@ -109,7 +112,7 @@ public class PasswordView extends RelativeLayout  {
 			if (i < 10) {
 				map.put("name", String.valueOf(i));
 			} else if (i == 10) {
-				map.put("name", "");
+				map.put("name", "Yully东");
 			} else if (i == 11) {
 				map.put("name", String.valueOf(0));
 			} else if (i == 12) {
@@ -208,11 +211,11 @@ public class PasswordView extends RelativeLayout  {
 			}
 			viewHolder.btnKey.setText(valueList.get(position).get("name"));
 			if (position == 9||position==11) {
-				viewHolder.btnKey.setBackgroundDrawable(Utils.getStateListDrawable(context));
+				viewHolder.btnKey.setBackgroundDrawable(Util.getStateListDrawable(context));
 				viewHolder.btnKey.setEnabled(false);
 			}
 			if (position == 11) {
-				viewHolder.btnKey.setBackgroundDrawable(Utils.getStateListDrawable(context));
+				viewHolder.btnKey.setBackgroundDrawable(Util.getStateListDrawable(context));
 			}
 
 			return convertView;

@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private static String api_version = "1.0.0";//v1.0
     private Button shareSDKBtn, getMyContentProvider, addMyContentProvider,
             deleteMyContentProvider, updateMyContentProvider, calenderBtn,
-    myView;
+    myPasswordView,myNameView;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
         updateMyContentProvider = (Button) findViewById(R.id.my_contentProvider_update);
         calenderBtn = (Button) findViewById(R.id.btn_Calendar);
         shareSDKBtn = (Button) findViewById(R.id.btn_shareSDK);
-        myView = (Button) findViewById(R.id.my_view);
-
+        myPasswordView = (Button) findViewById(R.id.my_password_view);
+        myNameView = (Button) findViewById(R.id.my_name_view);
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -159,11 +159,19 @@ public class MainActivity extends AppCompatActivity {
                 oks.show(MainActivity.this);
             }
         });
-        myView.setOnClickListener(new View.OnClickListener() {
+        myPasswordView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent();
-                intent.setClass(MainActivity.this,MyViewActivity.class);
+                intent.setClass(MainActivity.this, MyPasswordViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        myNameView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this,MyNameActivity.class);
                 startActivity(intent);
             }
         });

@@ -7,8 +7,6 @@
   -->
 
 <resources>
-    <string name="app_name">YieronView</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
 </resources>

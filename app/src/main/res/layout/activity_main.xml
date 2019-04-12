@@ -54,9 +54,16 @@
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/my_view"
+        android:id="@+id/my_password_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/MyView"
+        android:text="@string/MyPasswordView"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/my_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MyNameView"
         android:textAllCaps="false"/>
 </LinearLayout>

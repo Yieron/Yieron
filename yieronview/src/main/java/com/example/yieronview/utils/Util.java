@@ -1,10 +1,12 @@
-package com.example.yieronview;
+package com.example.yieronview.utils;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 
-public class Utils {
+import com.example.yieronview.R;
+
+public class Util {
 
 	public static StateListDrawable getStateListDrawable(Context context) {
 		StateListDrawable sd = new StateListDrawable();
