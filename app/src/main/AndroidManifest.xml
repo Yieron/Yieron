@@ -18,8 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
-        <activity android:name=".ui.activity.MyNameActivity"></activity>
-        <activity android:name=".ui.activity.MainActivity"></activity>
+        <activity android:name=".ui.activity.MyCanvasActivity"></activity>
+        <activity android:name=".ui.activity.MyNameActivity" />
+        <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.FlashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

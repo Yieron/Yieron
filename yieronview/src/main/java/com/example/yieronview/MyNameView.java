@@ -44,6 +44,11 @@ public class MyNameView extends RelativeLayout {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int widthsize = MeasureSpec.getSize(widthMeasureSpec);      //取出宽度的确切数值
+        int widthmode = MeasureSpec.getMode(widthMeasureSpec);      //取出宽度的测量模式
+
+        int heightsize = MeasureSpec.getSize(heightMeasureSpec);    //取出高度的确切数值
+        int heightmode = MeasureSpec.getMode(heightMeasureSpec);    //取出高度的测量模式
     }
 
     @Override

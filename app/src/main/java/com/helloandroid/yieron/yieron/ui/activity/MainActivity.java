@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private static String api_version = "1.0.0";//v1.0
     private Button shareSDKBtn, getMyContentProvider, addMyContentProvider,
             deleteMyContentProvider, updateMyContentProvider, calenderBtn,
-    myPasswordView,myNameView;
+            myPasswordView, myNameView, myCanvasView;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         shareSDKBtn = (Button) findViewById(R.id.btn_shareSDK);
         myPasswordView = (Button) findViewById(R.id.my_password_view);
         myNameView = (Button) findViewById(R.id.my_name_view);
+        myCanvasView = (Button) findViewById(R.id.my_canvas_view);
+
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -162,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         myPasswordView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent();
+                Intent intent = new Intent();
                 intent.setClass(MainActivity.this, MyPasswordViewActivity.class);
                 startActivity(intent);
             }
@@ -171,7 +173,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this,MyNameActivity.class);
+                intent.setClass(MainActivity.this, MyNameActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myCanvasView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, MyCanvasActivity.class);
                 startActivity(intent);
             }
         });
