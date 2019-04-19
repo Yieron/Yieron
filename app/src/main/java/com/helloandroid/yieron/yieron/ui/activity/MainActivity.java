@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private static String api_version = "1.0.0";//v1.0
     private Button shareSDKBtn, getMyContentProvider, addMyContentProvider,
             deleteMyContentProvider, updateMyContentProvider, calenderBtn,
-            myPasswordView, myNameView, myCanvasView;
+            myPasswordView, myNameView, myCanvasView,myFallingBallView;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         myPasswordView = (Button) findViewById(R.id.my_password_view);
         myNameView = (Button) findViewById(R.id.my_name_view);
         myCanvasView = (Button) findViewById(R.id.my_canvas_view);
+        myFallingBallView =  (Button) findViewById(R.id.failing_ball_view);
 
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,6 +184,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, MyCanvasActivity.class);
+                startActivity(intent);
+            }
+        });
+        myFallingBallView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, FallingBallActivity.class);
                 startActivity(intent);
             }
         });

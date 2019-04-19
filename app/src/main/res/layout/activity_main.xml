@@ -73,4 +73,11 @@
         android:layout_height="wrap_content"
         android:text="@string/My_canvas"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/failing_ball_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/failling_ball"
+        android:textAllCaps="false" />
 </LinearLayout>

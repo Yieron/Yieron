@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
-        <activity android:name=".ui.activity.MyCanvasActivity"></activity>
+        <activity android:name=".ui.activity.FallingBallActivity"></activity>
+        <activity android:name=".ui.activity.MyCanvasActivity" />
         <activity android:name=".ui.activity.MyNameActivity" />
         <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.FlashActivity">
