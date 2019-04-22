@@ -15,6 +15,8 @@
     <string name="man">男</string>
     <string name="My_canvas">Canvas</string>
     <string name="failling_ball">弹弹球</string>
+    <string name="draw_view">一个简单的自定义View</string>
+    <string name="lable_image_view">标签图片</string>
 
 
     <!-- Strings related to Settings -->
