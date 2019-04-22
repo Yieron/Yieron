@@ -1,1 +1,1 @@
-include ':app', ':yieronview'
+include ':app', ':yieronview', ':mycustomview'

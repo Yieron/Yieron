@@ -60,7 +60,7 @@ public class FallingBall extends View {
         mPaint.setColor(Color.BLACK);
         mPaint.setAntiAlias(true);
 
-        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.dear);
+        mBitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.ball);
     }
 
     @Override
