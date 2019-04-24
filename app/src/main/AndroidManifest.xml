@@ -19,6 +19,12 @@
         android:theme="@style/AppTheme"
         tools:replace="android:name">
         <activity
+            android:name=".ui.activity.TabsActivity"
+            android:label="@string/title_activity_tabs"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
             android:name=".ui.activity.ScrollingActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />

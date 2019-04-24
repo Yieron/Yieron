@@ -35,7 +35,7 @@ public class FlashActivity extends AppCompatActivity {
                     try {
                         Thread.sleep(3000);
                         Intent intent = new Intent();
-                        intent.setClass(FlashActivity.this, ItemListActivity.class);
+                        intent.setClass(FlashActivity.this, TabsActivity.class);
                         startActivity(intent);
                         finish();
                     } catch (InterruptedException e) {
