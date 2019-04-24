@@ -6,4 +6,6 @@
 
     <color name="subject_activity_bg">#ffefefef</color>
     <color name="toolbar_backgroud">@color/colorPrimary</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

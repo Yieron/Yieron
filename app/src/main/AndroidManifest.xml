@@ -18,7 +18,41 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
-        <activity android:name=".ui.activity.LableImageActivity"></activity>
+        <activity
+            android:name=".ui.activity.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.NaviDrawerActivity"
+            android:label="@string/title_activity_navi_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ItemListActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.activity.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ui.activity.ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.helloandroid.yieron.yieron.ui.activity.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.FullScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ui.activity.ViewModelActivity" />
+        <activity
+            android:name=".ui.activity.BottomNavActivity"
+            android:label="@string/title_activity_bottom" />
+        <activity
+            android:name=".ui.activity.BasicActivity"
+            android:label="@string/title_activity_basic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activity.LableImageActivity" />
         <activity android:name=".ui.activity.DrawActivity" />
         <activity android:name=".ui.activity.FallingBallActivity" />
         <activity android:name=".ui.activity.MyCanvasActivity" />
