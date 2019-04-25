@@ -8,4 +8,9 @@
     tools:context=".ui.activity.NaviDrawerActivity"
     tools:showIn="@layout/app_bar_navi_drawer">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/Yin"/>
+
 </android.support.constraint.ConstraintLayout>
