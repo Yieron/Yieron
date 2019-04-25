@@ -1,4 +1,4 @@
-package com.helloandroid.yieron.yieron.ui.activity.ui.main;
+package com.helloandroid.yieron.yieron.ui.activity.Tabs.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.helloandroid.yieron.yieron.ui.activity.ui.main;
+package com.helloandroid.yieron.yieron.ui.activity.Tabs.main;
 
 import android.content.Context;
 import android.support.annotation.Nullable;

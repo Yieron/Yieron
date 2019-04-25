@@ -6,12 +6,10 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
 import com.helloandroid.yieron.yieron.R;
-import com.helloandroid.yieron.yieron.ui.activity.ui.main.SectionsPagerAdapter;
+import com.helloandroid.yieron.yieron.ui.activity.Tabs.main.SectionsPagerAdapter;
 
 public class TabsActivity extends AppCompatActivity {
 

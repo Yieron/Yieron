@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.helloandroid.yieron.yieron.R;
-import com.helloandroid.yieron.yieron.ui.activity.ui.viewmodel.ViewModelFragment;
+import com.helloandroid.yieron.yieron.ui.activity.Tabs.viewmodel.ViewModelFragment;
 
 public class ViewModelActivity extends AppCompatActivity {
 

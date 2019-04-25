@@ -1,4 +1,4 @@
-package com.helloandroid.yieron.yieron.ui.activity.ui.viewmodel;
+package com.helloandroid.yieron.yieron.ui.activity.Tabs.viewmodel;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
