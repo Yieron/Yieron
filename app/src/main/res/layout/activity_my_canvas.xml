@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.MyCanvasActivity">
 
-    <com.example.yieronview.CanvasDemoView
+    <com.example.yieronview.DashPathEffectTestView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

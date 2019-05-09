@@ -19,7 +19,6 @@ public class TintDrawableUtils {
 
     /**
      * 为Drawable着色
-     *
      * @param drawable
      * @param colors
      * @return
