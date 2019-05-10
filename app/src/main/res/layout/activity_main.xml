@@ -98,5 +98,12 @@
             android:layout_height="wrap_content"
             android:text="@string/lable_image_view"
             android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/arc_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/arc_seek_bar_view"
+            android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>
