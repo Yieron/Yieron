@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private Button shareSDKBtn, getMyContentProvider, addMyContentProvider,
             deleteMyContentProvider, updateMyContentProvider, calenderBtn,
             myPasswordView, myNameView, myCanvasView, myFallingBallView, DrawView, lableImageView,
-            arcSeekBarView;
+            arcSeekBarView,scaleGestureView;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
         DrawView = (Button) findViewById(R.id.draw_view);
         lableImageView = (Button) findViewById(R.id.lable_imageView);
         arcSeekBarView=(Button)findViewById(R.id.arc_seek_bar);
+        scaleGestureView = (Button)findViewById(R.id.scale_gesture_view);
+
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -220,6 +222,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ArcSeekBarActivity.class);
+                startActivity(intent);
+            }
+        });
+        scaleGestureView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, ScaleGestureDemoActivity.class);
                 startActivity(intent);
             }
         });

@@ -18,7 +18,7 @@
     <string name="draw_view">一个简单的自定义View</string>
     <string name="lable_image_view">标签图片</string>
     <string name="arc_seek_bar_view">arc_seek_bar_view</string>
-
+    <string name="scale_gesture_view">手势之缩放</string>
 
     <!-- Strings related to Settings -->
 

@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
-        <activity android:name=".ui.activity.ArcSeekBarActivity"></activity>
+        <activity android:name=".ui.activity.ScaleGestureDemoActivity"></activity>
+        <activity android:name=".ui.activity.ArcSeekBarActivity" />
 
         <receiver android:name=".ui.widget.NewAppWidget">
             <intent-filter>
