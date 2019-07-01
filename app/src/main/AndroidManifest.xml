@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:name">
-        <activity android:name=".ui.activity.ScaleGestureDemoActivity"></activity>
+        <activity android:name=".ui.activity.RecycleViewActivity"></activity>
+        <activity android:name=".ui.activity.ScaleGestureDemoActivity" />
         <activity android:name=".ui.activity.ArcSeekBarActivity" />
 
         <receiver android:name=".ui.widget.NewAppWidget">
