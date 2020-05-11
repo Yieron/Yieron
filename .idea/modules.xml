@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-Yieron.iml" filepath="$PROJECT_DIR$/Android-Yieron.iml" group="Yieron" />
       <module fileurl="file://$PROJECT_DIR$/Yieron.iml" filepath="$PROJECT_DIR$/Yieron.iml" group="Yieron" />
+      <module fileurl="file://$PROJECT_DIR$/app/Yieron-app.iml" filepath="$PROJECT_DIR$/app/Yieron-app.iml" group="Yieron/app" />
+      <module fileurl="file://$PROJECT_DIR$/mycustomview/Yieron-mycustomview.iml" filepath="$PROJECT_DIR$/mycustomview/Yieron-mycustomview.iml" group="Yieron/mycustomview" />
+      <module fileurl="file://$PROJECT_DIR$/yieronview/Yieron-yieronview.iml" filepath="$PROJECT_DIR$/yieronview/Yieron-yieronview.iml" group="Yieron/yieronview" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Yieron/app" />
       <module fileurl="file://$PROJECT_DIR$/mycustomview/mycustomview.iml" filepath="$PROJECT_DIR$/mycustomview/mycustomview.iml" group="Yieron/mycustomview" />
       <module fileurl="file://$PROJECT_DIR$/yieronview/yieronview.iml" filepath="$PROJECT_DIR$/yieronview/yieronview.iml" group="Yieron/yieronview" />
