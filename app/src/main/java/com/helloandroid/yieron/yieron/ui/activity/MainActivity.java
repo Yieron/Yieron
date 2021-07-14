@@ -228,9 +228,7 @@ public class MainActivity extends AppCompatActivity {
         scaleGestureView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, ScaleGestureDemoActivity.class);
-                startActivity(intent);
+                ScaleGestureDemoActivity.actionStart(MainActivity.this,"","");
             }
         });
     }
