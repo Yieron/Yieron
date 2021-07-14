@@ -19,6 +19,8 @@
     <string name="lable_image_view">标签图片</string>
     <string name="arc_seek_bar_view">arc_seek_bar_view</string>
     <string name="scale_gesture_view">手势之缩放</string>
+    <string name="nav_back">返回</string>
+    <string name="nav_edit">编辑</string>
 
     <!-- Strings related to Settings -->
 
