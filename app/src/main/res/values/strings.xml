@@ -21,7 +21,7 @@
     <string name="scale_gesture_view">手势之缩放</string>
     <string name="nav_back">返回</string>
     <string name="nav_edit">编辑</string>
-
+    <string name="my_recycle_view">学习recycleView </string>
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->

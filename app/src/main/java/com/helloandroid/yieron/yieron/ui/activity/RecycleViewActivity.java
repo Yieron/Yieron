@@ -12,45 +12,38 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.helloandroid.yieron.yieron.R;
+import com.helloandroid.yieron.yieron.adapter.FruitAdapter;
+import com.helloandroid.yieron.yieron.model.Fruit;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RecycleViewActivity extends AppCompatActivity {
+
+    private List<Fruit> fruitList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycle_view);
-
-        RecyclerView recyclerView =(RecyclerView) this.findViewById(R.id.id_recycleView);
+        initFruits();
+        RecyclerView recyclerView = (RecyclerView) this.findViewById(R.id.id_recycleView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(new RecyclerView.Adapter() {
-            private List<String> mList;
-            private Context mContext;
-            class MyViewHolder extends RecyclerView.ViewHolder{
-                TextView tv;
-                public MyViewHolder(View itemView) {
-                    super(itemView);
-                    tv=itemView.findViewById(R.id.tv_item);
-                }
-            }
+        FruitAdapter fruitAdapter = new FruitAdapter(fruitList);
+        recyclerView.setAdapter(fruitAdapter);
+    }
 
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-                MyViewHolder holder = new MyViewHolder(LayoutInflater.from(mContext).inflate(R.layout.item_recycle_view,parent,false));
-                return holder;
-            }
-
-            @Override
-            public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-            }
-
-            @Override
-            public int getItemCount() {
-                return 0;
-            }
-        });
+    private void initFruits() {
+        for (int i = 0; i < 10; i++) {
+            Fruit apple = new Fruit("Apple");
+            fruitList.add(apple);
+            Fruit banana = new Fruit("banana");
+            fruitList.add(banana);
+            Fruit orange = new Fruit("orange");
+            fruitList.add(orange);
+            Fruit grape = new Fruit("grape");
+            fruitList.add(grape);
+        }
     }
 }
