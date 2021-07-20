@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,7 @@ import com.helloandroid.yieron.yieron.model.Fruit;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class RecycleViewActivity extends AppCompatActivity {
 
@@ -28,7 +30,10 @@ public class RecycleViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycle_view);
         initFruits();
         RecyclerView recyclerView = (RecyclerView) this.findViewById(R.id.id_recycleView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
+        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        recyclerView.setLayoutManager(staggeredGridLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         FruitAdapter fruitAdapter = new FruitAdapter(fruitList);
         recyclerView.setAdapter(fruitAdapter);
@@ -36,14 +41,24 @@ public class RecycleViewActivity extends AppCompatActivity {
 
     private void initFruits() {
         for (int i = 0; i < 10; i++) {
-            Fruit apple = new Fruit("Apple");
+            Fruit apple = new Fruit(getRandomLengthName("Apple"));
             fruitList.add(apple);
-            Fruit banana = new Fruit("banana");
+            Fruit banana = new Fruit(getRandomLengthName("banana"));
             fruitList.add(banana);
-            Fruit orange = new Fruit("orange");
+            Fruit orange = new Fruit(getRandomLengthName("orange"));
             fruitList.add(orange);
-            Fruit grape = new Fruit("grape");
+            Fruit grape = new Fruit(getRandomLengthName("grape"));
             fruitList.add(grape);
         }
+    }
+
+    private String getRandomLengthName(String name){
+        Random random = new Random();
+        int nameLength = random.nextInt(20) + 1;
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < nameLength; i++) {
+            stringBuilder.append(name);
+        }
+        return  stringBuilder.toString();
     }
 }

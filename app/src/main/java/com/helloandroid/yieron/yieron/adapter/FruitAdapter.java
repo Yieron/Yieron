@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.helloandroid.yieron.yieron.R;
 import com.helloandroid.yieron.yieron.model.Fruit;
@@ -18,21 +19,31 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         TextView fruitName;
+        View fruitView;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            fruitName= itemView.findViewById(R.id.fruit_name);
+            fruitView = itemView;
+            fruitName = itemView.findViewById(R.id.fruit_name);
         }
     }
 
-    public FruitAdapter(List<Fruit> fruitList){
+    public FruitAdapter(List<Fruit> fruitList) {
         mFruitList = fruitList;
     }
 
     @Override
     public FruitAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_fruit_view,parent,false);
-        ViewHolder viewHolder = new ViewHolder(view);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_fruit_view, parent, false);
+        final ViewHolder viewHolder = new ViewHolder(view);
+        viewHolder.fruitName.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position = viewHolder.getAdapterPosition();
+                Fruit fruit = mFruitList.get(position);
+                Toast.makeText(v.getContext(), "您点击了" + fruit.getName(), Toast.LENGTH_LONG).show();
+            }
+        });
         return viewHolder;
     }
 
