@@ -125,5 +125,12 @@
             android:layout_height="wrap_content"
             android:text="@string/my_recycle_view"
             android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/nine_patch_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nine_patch_view"
+            android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>

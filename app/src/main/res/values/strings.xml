@@ -22,6 +22,7 @@
     <string name="nav_back">返回</string>
     <string name="nav_edit">编辑</string>
     <string name="my_recycle_view">学习recycleView </string>
+    <string name="nine_patch_view">学习ninePatch</string>
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->

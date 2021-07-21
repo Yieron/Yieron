@@ -1,8 +1,8 @@
 package com.helloandroid.yieron.yieron.model;
 
 public class Msg {
-    private static final int TYPE_RECEIVED = 0;
-    private static final int TYPE_SEND = 1;
+    public static final int TYPE_RECEIVED = 0;
+    public static final int TYPE_SEND = 1;
 
     public String getContent() {
         return content;
