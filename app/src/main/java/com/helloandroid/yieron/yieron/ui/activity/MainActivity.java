@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private Button shareSDKBtn, getMyContentProvider, addMyContentProvider,
             deleteMyContentProvider, updateMyContentProvider, calenderBtn,
             myPasswordView, myNameView, myCanvasView, myFallingBallView, DrawView, lableImageView,
-            arcSeekBarView,scaleGestureView,myRecycleView,ninePatchView;
+            arcSeekBarView,scaleGestureView,myRecycleView,ninePatchView,mFragmentView;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
         scaleGestureView = (Button)findViewById(R.id.scale_gesture_view);
         myRecycleView = (Button)findViewById(R.id.my_recycle_view);
         ninePatchView = (Button)findViewById(R.id.nine_patch_view);
+        mFragmentView = (Button)findViewById(R.id.my_fragment_view);
+
 
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -252,6 +254,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, NinePatchActivity.class);
+                startActivity(intent);
+            }
+        });
+        mFragmentView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(MainActivity.this, FragmentActivity.class);
                 startActivity(intent);
             }
         });
