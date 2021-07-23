@@ -10,7 +10,14 @@
     <fragment
         android:id="@+id/left_fragment"
         android:name="com.helloandroid.yieron.yieron.ui.fragment.BlankFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/right_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
 </android.support.constraint.ConstraintLayout>

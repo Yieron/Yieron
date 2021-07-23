@@ -19,7 +19,6 @@ public class FragmentActivity extends AppCompatActivity implements BlankFragment
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
-        replaceFragment(new FullscreenFragment());
     }
 
 

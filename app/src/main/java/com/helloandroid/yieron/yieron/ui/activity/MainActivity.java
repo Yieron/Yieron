@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private Button shareSDKBtn, getMyContentProvider, addMyContentProvider,
             deleteMyContentProvider, updateMyContentProvider, calenderBtn,
             myPasswordView, myNameView, myCanvasView, myFallingBallView, DrawView, lableImageView,
-            arcSeekBarView,scaleGestureView,myRecycleView,ninePatchView,mFragmentView;
+            arcSeekBarView, scaleGestureView, myRecycleView, ninePatchView, mFragmentView, mNewsView;
     private String newId;
     private static final String TAG = "MainActivity";
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar!=null){
+        if (actionBar != null) {
             actionBar.hide();
         }
 
@@ -67,11 +67,12 @@ public class MainActivity extends AppCompatActivity {
         myFallingBallView = (Button) findViewById(R.id.failing_ball_view);
         DrawView = (Button) findViewById(R.id.draw_view);
         lableImageView = (Button) findViewById(R.id.lable_imageView);
-        arcSeekBarView=(Button)findViewById(R.id.arc_seek_bar);
-        scaleGestureView = (Button)findViewById(R.id.scale_gesture_view);
-        myRecycleView = (Button)findViewById(R.id.my_recycle_view);
-        ninePatchView = (Button)findViewById(R.id.nine_patch_view);
-        mFragmentView = (Button)findViewById(R.id.my_fragment_view);
+        arcSeekBarView = (Button) findViewById(R.id.arc_seek_bar);
+        scaleGestureView = (Button) findViewById(R.id.scale_gesture_view);
+        myRecycleView = (Button) findViewById(R.id.my_recycle_view);
+        ninePatchView = (Button) findViewById(R.id.nine_patch_view);
+        mFragmentView = (Button) findViewById(R.id.my_fragment_view);
+        mNewsView = (Button) findViewById(R.id.news_view);
 
 
         getMyContentProvider.setOnClickListener(new View.OnClickListener() {
@@ -238,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
         scaleGestureView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ScaleGestureDemoActivity.actionStart(MainActivity.this,"","");
+                ScaleGestureDemoActivity.actionStart(MainActivity.this, "", "");
             }
         });
         myRecycleView.setOnClickListener(new View.OnClickListener() {
@@ -263,6 +264,12 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, FragmentActivity.class);
                 startActivity(intent);
+            }
+        });
+        mNewsView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NewsActivity.actionStart(MainActivity.this, "", "");
             }
         });
     }

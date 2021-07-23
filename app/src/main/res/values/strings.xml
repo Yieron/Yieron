@@ -24,6 +24,7 @@
     <string name="my_recycle_view">学习recycleView </string>
     <string name="nine_patch_view">学习ninePatch</string>
     <string name="my_fragment_view">学习Fragment</string>
+    <string name="news_view">News列表</string>
     <!-- Strings related to Settings -->
 
     <!-- Example General settings -->

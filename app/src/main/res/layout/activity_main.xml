@@ -139,5 +139,12 @@
             android:layout_height="wrap_content"
             android:text="@string/my_fragment_view"
             android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/news_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/news_view"
+            android:textAllCaps="false" />
     </LinearLayout>
 </ScrollView>

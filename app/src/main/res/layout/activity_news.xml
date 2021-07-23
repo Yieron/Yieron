@@ -4,13 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".ui.activity.FragmentActivity">
-
-    <fragment
-        android:id="@+id/left_fragment"
-        android:name="com.helloandroid.yieron.yieron.ui.fragment.BlankFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    tools:context=".ui.activity.NewsActivity">
 
 </android.support.constraint.ConstraintLayout>
