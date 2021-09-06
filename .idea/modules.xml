@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Yieron.iml" filepath="$PROJECT_DIR$/.idea/modules/Yieron.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Yieron.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Yieron.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycustomview/Yieron.mycustomview.iml" filepath="$PROJECT_DIR$/.idea/modules/mycustomview/Yieron.mycustomview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/yieronview/Yieron.yieronview.iml" filepath="$PROJECT_DIR$/.idea/modules/yieronview/Yieron.yieronview.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Yieron_Android.iml" filepath="$PROJECT_DIR$/.idea/modules/Yieron_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Yieron_Android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Yieron_Android.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycustomview/Yieron_Android.mycustomview.iml" filepath="$PROJECT_DIR$/.idea/modules/mycustomview/Yieron_Android.mycustomview.iml" />
